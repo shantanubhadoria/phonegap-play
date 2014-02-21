@@ -20,6 +20,10 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+        var loaderElement = document.getElementById('app');
+        var appreadyElement = document.getElementById('index');
+          loaderElement.setAttribute('style', 'display:none;');
+          appreadyElement.setAttribute('style', 'display:block;');
     },
     // Bind Event Listeners
     //
@@ -37,12 +41,18 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        var loaderElement = document.getElementById('app');
+        var appreadyElement = document.getElementById('index');
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        setTimeout(function(){
+          loaderElement.setAttribute('style', 'display:none;');
+          appreadyElement.setAttribute('style', 'display:block;');
+        },2000);
 
         console.log('Received Event: ' + id);
     }

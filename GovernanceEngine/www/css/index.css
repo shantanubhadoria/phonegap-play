@@ -97,6 +97,11 @@ h1 {
     display:none;
 }
 
+#index {
+    background-color:#999999;
+    display:none;
+}
+
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
@@ -112,4 +117,16 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+.ui-content {
+    padding: 0 !important;
+}
+
+.ui-listview {
+    margin: 0 !important;
+}
+
+.wrapper, .wrapper div.iscroll-scroller {
+    width: 100% !important;
 }
