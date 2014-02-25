@@ -24,20 +24,14 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/jquery/jquery.mobile-1.4.1.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+<!--        <link rel="stylesheet" type="text/css" href="css/index.css"
+/> -->
 
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery/jquery.mobile-1.4.1.min.js"></script>
         <title>Governance Engine</title>
     </head>
     <body>
-        <div id="app" class="app">
-            <div id="deviceready" class="blink">
-                <h1>Governance Engine</h1>
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
         <div data-role="page" id="page1" data-theme="a" data-next="page1">
             <div data-role="header"
                 data-position="right">
@@ -47,7 +41,7 @@
                 <div class="wrapper" data-iscroll>
                     <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search issues">
                         <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
-                        <li><a href="#">
+                        <li><a href="issue.html" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
                             <img src="http://demos.jquerymobile.com/1.3.0-rc.1/docs/demos/_assets/img/album-hc.jpg">
                             <h2 class="ui-li-heading">Element Heading</h2>
                             <p class="ui-li-desc">
@@ -124,14 +118,6 @@
             <div data-role="footer" data-position="fixed">
                 <h1>Footer</h1>
             </div>    
-        </div>
-        <div data-role="page" id="page2" data-theme="a" data-prev="page2">
-            <div role="main" class="ui-content">
-                <div id="trivia-city" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
-                    <a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
-                    <p>Here some text.</p>
-                </div><!-- /popup -->
-            </div><!-- /content -->
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
