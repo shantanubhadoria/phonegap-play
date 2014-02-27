@@ -16,14 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+var baseURL = "http://192.168.0.11:3000/";
 var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        var loaderElement = document.getElementById('app');
-        var appreadyElement = document.getElementById('index');
-          loaderElement.setAttribute('style', 'display:none;');
-          appreadyElement.setAttribute('style', 'display:block;');
     },
     // Bind Event Listeners
     //
@@ -31,29 +29,37 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        $("#loginForm").on("submit",function(e) {
+          //disable the button so we can't resubmit while we wait
+          $("#submitButton",this).attr("disabled","disabled");
+          var u = $("#username", this).val();
+          var p = $("#password", this).val();
+          if(u != '' && p!= '') {
+            $.post(baseURL + 'user/login/', {username:u,password:p}, function(res) {
+              if(res.success == true){
+                $.mobile.changePage("list.html");
+              } else {
+                $("#submitButton").removeAttr("disabled");
+              }
+            },"json");
+          }
+          return false;
+        });
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicity call 'app.receivedEvent(...);'
+   // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var loaderElement = document.getElementById('app');
-        var appreadyElement = document.getElementById('index');
-        var parentElement = document.getElementById(id);
+        parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-        setTimeout(function(){
-          loaderElement.setAttribute('style', 'display:none;');
-          appreadyElement.setAttribute('style', 'display:block;');
-        },2000);
-
-        console.log('Received Event: ' + id);
     }
 };

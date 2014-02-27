@@ -16,6 +16,7 @@
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/index.html \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/spec \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/icon.png \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/list.html \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/loaded.html \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/config.xml \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/issue.html \
