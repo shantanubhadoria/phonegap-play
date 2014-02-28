@@ -17,7 +17,7 @@
  * under the License.
  */
 
-var baseURL = "http://192.168.0.11:3000/";
+var baseURL = "http://74.53.25.75:5002/";
 var app = {
   // Application Constructor
   initialize: function() {
