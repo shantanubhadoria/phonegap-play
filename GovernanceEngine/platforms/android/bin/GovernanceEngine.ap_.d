@@ -30,6 +30,7 @@
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/index.js \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/jquery \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/jquery.js \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/phonegap.js \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/jquery/jquery.mobile-1.4.1.min.js \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/jquery/jquery.mobile-1.4.1.min.map \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/jquery/mobile \

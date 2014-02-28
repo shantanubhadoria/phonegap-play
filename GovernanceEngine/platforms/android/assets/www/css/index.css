@@ -52,10 +52,10 @@ body {
     left:50%;
     top:50%;
     height:100px;                   /* text area height */
-    width:175px;                   /* text area width */
+    width:200px;                   /* text area width */
     text-align:center;
-    padding:264px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-187px 0px 0px -87px;  /* offset vertical: half of image height and text area height */
+    padding:195px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-175px 0px 0px -100px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
 
@@ -63,8 +63,8 @@ body {
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-120px 0px 0px -198px;  /* offset vertical: half of image height */
+        padding:0px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-95px 0px 0px -198px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
 }
@@ -99,6 +99,10 @@ h1 {
 
 #index {
     background-color:#999999;
+    display:none;
+}
+
+#login-form {
     display:none;
 }
 

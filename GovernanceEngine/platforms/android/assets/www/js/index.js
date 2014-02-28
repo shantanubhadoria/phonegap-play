@@ -29,22 +29,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        $("#loginForm").on("submit",function(e) {
-          //disable the button so we can't resubmit while we wait
-          $("#submitButton",this).attr("disabled","disabled");
-          var u = $("#username", this).val();
-          var p = $("#password", this).val();
-          if(u != '' && p!= '') {
-            $.post(baseURL + 'user/login/', {username:u,password:p}, function(res) {
-              if(res.success == true){
-                $.mobile.changePage("list.html");
-              } else {
-                $("#submitButton").removeAttr("disabled");
-              }
-            },"json");
-          }
-          return false;
-        });
     },
     // deviceready Event Handler
     //
@@ -61,5 +45,30 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+
+        // Activate the Login Form
+        $("#login-form").css('display', 'block');
+        $("#loginForm").on("submit",function(e) {
+          // disable the button so we can't resubmit while we wait
+          $("#submitButton",this).attr("disabled","disabled");
+          var u = $("#username", this).val();
+          var p = $("#password", this).val();
+          if(u != '' && p!= '') {
+            $.post(baseURL + 'user/login/', {username:u,password:p}, function(res) {
+              if(res.success == true){
+                $.mobile.changePage("list.html");
+              } else {
+                $("#ready-status").html("Invalid Login");
+                $("#ready-status").css("background-color", "red");
+                $("#submitButton").removeAttr("disabled");
+              }
+            },"json");
+          } else {
+                $("#ready-status").html("Username/Password Required");
+                $("#ready-status").css("background-color", "red");
+                $("#submitButton").removeAttr("disabled");
+          }
+          return false;
+        });
     }
 };
