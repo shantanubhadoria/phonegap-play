@@ -18,47 +18,57 @@ specific language governing permissions and limitations
 under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/jquery/jquery.mobile-1.4.1.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/phonegap.js"></script>
-        <script type="text/javascript" src="js/jquery/jquery.mobile-1.4.1.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <title>Governance Engine</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Governance Engine</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p id="ready-status" class="event received">Device is Ready</p>
-                <div data-role="content" id="login-form">
-                    <form id="loginForm">
-                        <div data-role="fieldcontain"
-                            class="ui-hide-label">
-                            <label for="username">Username:</label>
-                            <input type="text" name="username" id="username"
-                            value="" placeholder="Username" />
-                        </div>
-                        <div data-role="fieldcontain"
-                            class="ui-hide-label">
-                            <label for="password">Password:</label>
-                            <input type="password" name="password"
-                            id="password" value="" placeholder="Password" />
-                        </div>
-                        <input type="submit" value="Login"
-                        id="submitButton">
-                    </form>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/jquery/jquery.mobile-1.4.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/phonegap.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.mobile-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Governance Engine</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Governance Engine</h1>
+      <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p id="ready-status" class="event received">Device is Ready</p>
+        <div data-role="content" id="login-form">
+          <form id="loginForm">
+            <div data-role="fieldcontain"
+              class="ui-hide-label">
+              <label for="username">Username:</label>
+              <input type="text" name="username" id="username"
+              value="" placeholder="Username" />
             </div>
+            <div data-role="fieldcontain"
+              class="ui-hide-label">
+              <label for="password">Password:</label>
+              <input type="password" name="password"
+              id="password" value="" placeholder="Password" />
+            </div>
+            <button id="login-button" type="submit"
+              class="show-page-loading-msg"
+              data-textonly="true"
+              data-textvisible="true" 
+              data-msgtext="Custom Loader" 
+              data-inline="true"
+              data-html="<img src='img/chakragray_animated.gif'>"
+              data-iconpos="right">
+              Login
+            </button>
+            <!--                        <input type="submit" value="Login"
+            id="submitButton">-->
+          </form>
         </div>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+      </div>
+    </div>
+    <script type="text/javascript">
+      app.initialize();
+      </script>
     </body>
-</html>
+  </html>

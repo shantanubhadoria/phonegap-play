@@ -18,6 +18,7 @@
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/icon.png \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/list.html \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/loaded.html \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/config.xml \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/issue.html \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img \
@@ -45,9 +46,19 @@
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine-html.js \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/spec/lib/jasmine-1.2.0/MIT.LICENSE \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.css \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra/iconanimated.gif \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra/frame3.png \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra/icon.xcf \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra/frame5.png \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra/frame1.png \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra/frame4.png \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/animation_raw/Chakra/frame2.png \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/index.png \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/logo.png \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/chakragray_animated.gif \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/Emblem_of_India (copy).svg \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/chakra_animated.gif \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/Emblem_of_India.png \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/index.jpeg \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/img/Emblem_of_India.svg \

@@ -64,21 +64,38 @@ var app = {
   handleLogin: function() {
       // disable the button so we can't resubmit while we wait
       $("#submitButton",this).attr("disabled","disabled");
+      $('#deviceready').hide();
       var u = $("#username").val();
       var p = $("#password").val();
       if(u != '' && p!= '') {
+        var $this = $("#login-button"),
+          theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
+          msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
+          textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
+          textonly = !!$this.jqmData( "textonly" );
+          html = $this.jqmData( "html" ) || "";
+        $.mobile.loading( "show", {
+          text: msgText,
+          textVisible: textVisible,
+          theme: theme,
+          textonly: textonly,
+          html: html
+        });
         $.post(baseURL + 'user/login/', {username:u,password:p}, function(res) {
           if(res.success == true){
             window.localStorage["username"] = u;
             window.localStorage["password"] = p;
             $.mobile.changePage("list.html");
           } else {
+            $('#deviceready').show();
+            $.mobile.loading( "hide" );
             $("#ready-status").html("Invalid Login");
             $("#ready-status").css("background-color", "red");
             $("#submitButton").removeAttr("disabled");
           }
         },"json");
       } else {
+        $('#deviceready').show();
         $("#ready-status").html("Username/Password Required");
         $("#ready-status").css("background-color", "red");
         $("#submitButton").removeAttr("disabled");
