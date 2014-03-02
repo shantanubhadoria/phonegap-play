@@ -17,7 +17,29 @@
  * under the License.
  */
 
-var baseURL = "http://74.53.25.75:5002/";
+$(document).ready(function(){
+  app.initialize();
+  $(document).on('pageshow','#list-page', function (event,ui) {
+    list.initialize();
+  });
+  $(document).on('pageshow','#list-page', function (event,ui) {
+    $(ui.prevPage).remove();
+  });
+  $(document).on('navigate','#list-page', function (event,ui) {
+    if ( direction == 'back' ) {
+      navigator.app.exitApp();
+    }
+  });
+  document.addEventListener("backbutton", function(e){
+    if($.mobile.activePage.is('#list-page')){
+      e.preventDefault();
+      navigator.app.exitApp();
+    }
+    else {
+      navigator.app.backHistory()
+    }
+  }, false);
+});
 var app = {
   // Application Constructor
   initialize: function() {
@@ -68,19 +90,7 @@ var app = {
       var u = $("#username").val();
       var p = $("#password").val();
       if(u != '' && p!= '') {
-        var $this = $("#login-button"),
-          theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
-          msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
-          textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
-          textonly = !!$this.jqmData( "textonly" );
-          html = $this.jqmData( "html" ) || "";
-        $.mobile.loading( "show", {
-          text: msgText,
-          textVisible: textVisible,
-          theme: theme,
-          textonly: textonly,
-          html: html
-        });
+        showLoader('Authenticating');
         $.post(baseURL + 'user/login/', {username:u,password:p}, function(res) {
           if(res.success == true){
             window.localStorage["username"] = u;

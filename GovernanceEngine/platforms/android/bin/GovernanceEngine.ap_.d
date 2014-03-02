@@ -28,6 +28,8 @@
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/cordova.js \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/css \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/cordova_plugins.js \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/core.js \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/list.js \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/index.js \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/jquery \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/js/jquery.js \
@@ -124,6 +126,7 @@
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/res/icon/windows-phone/icon-62-tile.png \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/res/icon/windows-phone/icon-173-tile.png \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/css/index.css \
+/home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/css/list.css \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/css/jquery \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/css/jquery/jquery.mobile-1.4.1.min.css \
 /home/shantanu/github/phonegap-play/GovernanceEngine/platforms/android/assets/www/css/jquery/mobile \

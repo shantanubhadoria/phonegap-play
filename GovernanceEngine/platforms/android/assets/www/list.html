@@ -5,96 +5,33 @@
     <meta name="format-detection" content="telephone=no" />
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/jquery/jquery.mobile-1.4.1.min.css" />
-    <!--        <link rel="stylesheet" type="text/css" href="css/index.css"
-    /> -->
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery/jquery.mobile-1.4.1.min.js"></script>
     <title>Governance Engine</title>
   </head>
   <body>
-    <div data-role="page" id="page1" data-theme="a" data-next="page1">
+    <div data-role="page" id="list-page" data-theme="a"
+        data-next="issue-page">
       <div data-role="header"
         data-position="right">
         <h1>Header</h1>
       </div>
       <div data-role="content">
         <div class="wrapper" data-iscroll>
-          <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search issues">
+          <ul id="list-ul" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search issues">
 
             <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
-            <li><a href="issue.html" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+            <li><a href="issue.html?1" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
               <img src="img/chakragray_animated.gif">
               <h2 class="ui-li-heading">Element Heading</h2>
               <p class="ui-li-desc">
               <strong>
-                strong You've been invited to a meeting at Filament Group in Boston, MA
+                You've been invited to a meeting at Filament Group in Boston, MA
               </strong>
               </p>
               <p class="ui-li-desc">
-                description
-              </p>
-              <p>
                 Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.
               </p>
               <p class="ui-li-aside"><strong>6:24</strong>PM</p>
             </a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
-            <li><a href="#">Element</a></li>
           </ul>
         </div>
       </div>
@@ -102,10 +39,5 @@
         <h1>Footer</h1>
       </div>    
     </div>
-    <script type="text/javascript" src="phonegap.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-      app.initialize();
-      </script>
-    </body>
-  </html>
+  </body>
+</html>

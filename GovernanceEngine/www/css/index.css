@@ -152,3 +152,7 @@ h1 {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.ui-loader {
+  margin-left:-64px;
+  margin-top:-64px;
+}
