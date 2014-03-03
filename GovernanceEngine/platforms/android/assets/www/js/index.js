@@ -25,11 +25,6 @@ $(document).ready(function(){
   $(document).on('pageshow','#list-page', function (event,ui) {
     $(ui.prevPage).remove();
   });
-  $(document).on('navigate','#list-page', function (event,ui) {
-    if ( direction == 'back' ) {
-      navigator.app.exitApp();
-    }
-  });
   document.addEventListener("backbutton", function(e){
     if($.mobile.activePage.is('#list-page')){
       e.preventDefault();

@@ -124,7 +124,7 @@ h1 {
 }
 
 .ui-content {
-    padding: 0 !important;
+//    padding: 0 !important;
 }
 
 .ui-listview {
@@ -155,4 +155,10 @@ h1 {
 .ui-loader {
   margin-left:-64px;
   margin-top:-64px;
+}
+#issue-subject {
+  font-size: 1.5em;
+}
+.ui-author {
+  padding: 12px;
 }

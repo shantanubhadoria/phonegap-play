@@ -21,10 +21,15 @@ $(document).ready(function(){
   app.initialize();
   $(document).on('pageshow','#list-page', function (event,ui) {
     list.initialize();
-  });
-  $(document).on('pageshow','#list-page', function (event,ui) {
     $(ui.prevPage).remove();
   });
+
+  $(document).on('pageshow','#issue-page', function (event,ui) {
+    var url = window.location.href;
+    var issue_id = url.substring(url.indexOf("?")+1);
+    issue.initialize(issue_id);
+  });
+
   document.addEventListener("backbutton", function(e){
     if($.mobile.activePage.is('#list-page')){
       e.preventDefault();

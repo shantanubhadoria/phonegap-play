@@ -15,52 +15,52 @@
     </head>
     <body>
 
-        <div data-role="page" id="page-success" data-dom-cache="true"><!-- page-->
-            <div data-role="header" data-theme="a">
-                <h1>Page</h1>
-            </div><!-- /header -->
+        <div data-role="page" id="issue-page" data-theme="a"><!-- page-->
+            <div id="header" data-role="header" data-theme="a"></div><!-- /header -->
 
-            <div class="ui-content" role="main">
-                <p>That was an animated page transition effect to a page that we added with a <code>data-transition</code> attribute on the link. This uses a different background theme swatch to see how that looks with the transitions.</p>
-                <p>Since it uses CSS animations, this should be hardware accelerated on many devices. To see transitions, 3D transform support is required so if you only saw a fade transition that's the reason.</p>
+            <div data-role="main" class="ui-content">
+                <div class="wrapper" data-iscroll>
+                    <ul id="issue-ul" data-role="listview" data-inset="true" style="padding:1em;">
+                        <li>
+                            <h2 id="issue-subject" class="ui-li-heading"></h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <p id="issue-description" class="ui-li-desc" style="white-space:pre;line"></p>
+                            <form action="#" method="get">
+                                <h2>Here's a few form elements</h2>
+                                <p>These are here to see if this slows down rendering.</p>
+                                <div class="ui-field-contain">
+                                    <label for="name">Text Input:</label>
+                                    <input type="text" name="name" id="name" value="">
+                                </div>
+                                <div class="ui-field-contain">
+                                    <label for="textarea">Textarea:</label>
+                                    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                                </div>
+                                <div class="ui-field-contain">
+                                    <label for="slider2">Flip switch:</label>
+                                    <select name="slider2" id="slider2" data-role="slider">
+                                        <option value="off">Off</option>
+                                        <option value="on">On</option>
+                                    </select>
+                                </div>
 
-                <form action="#" method="get">
-                    <h2>Here's a few form elements</h2>
-
-                    <p>These are here to see if this slows down rendering.</p>
-
-                    <div class="ui-field-contain">
-                        <label for="name">Text Input:</label>
-                        <input type="text" name="name" id="name" value="">
-                    </div>
-
-                    <div class="ui-field-contain">
-                        <label for="textarea">Textarea:</label>
-                        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-                    </div>
-
-                    <div class="ui-field-contain">
-                        <label for="slider2">Flip switch:</label>
-                        <select name="slider2" id="slider2" data-role="slider">
-                            <option value="off">Off</option>
-                            <option value="on">On</option>
-                        </select>
-                    </div>
-
-                    <div class="ui-field-contain">
-                        <label for="slider">Slider:</label>
-                        <input type="range" name="slider" id="slider" value="0" min="0" max="100" data-highlight="true">
-                    </div>
-
-                </form>
-
-                <a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-inline" data-rel="back">Take me back</a>
+                                <div class="ui-field-contain">
+                                    <label for="slider">Slider:</label>
+                                    <input type="range" name="slider" id="slider" value="0" min="0" max="100" data-highlight="true">
+                                </div>
+                            </form>
+                            <a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-inline" data-rel="back">Take me back</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div data-role="footer" data-position="fixed">
                 <h1>Footer</h1>
             </div>    
 
         </div>
+        <script>
+        </script>
     </body>
 </html>
 
